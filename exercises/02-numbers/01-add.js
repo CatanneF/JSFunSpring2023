@@ -4,3 +4,5 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const sum = 3 + 5;
+console.log(sum)
