@@ -3,3 +3,6 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+const myName = "Catherine";
+console.log(myName);
