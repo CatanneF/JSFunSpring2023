@@ -17,3 +17,8 @@ let isBuyingDrink = true; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+if (isBuyingDrink) {
+    total += drink
+}
+console.log(total)
