@@ -9,5 +9,5 @@ let answer = "55"; // e.g.
 
 answer = parseInt(answer);
 console.log(answer) 
-answer += 5
-console.log(answer)
+
+
