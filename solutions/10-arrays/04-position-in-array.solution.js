@@ -20,6 +20,4 @@ let results = [
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-let place = results.indexOf("Jian Hou") + 1;
-
-console.log(place);
+const place = results.indexOf("Jian Hou") + 1;

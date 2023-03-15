@@ -15,6 +15,9 @@ if (num%2 === 0) {
     isEven = true;
 } else {
     isEven = false;
-};
+}; 
 
-console.log(isEven);
+console.log(isEven); 
+
+//isEven = num % 2 === 0; 
+

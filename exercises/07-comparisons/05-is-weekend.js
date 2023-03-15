@@ -1,4 +1,4 @@
-let day = "Saturday";
+let day = "Sunday";
 
 /**
  * Create a variable called "isWeekend". (Do not use var.)
@@ -12,7 +12,7 @@ let day = "Saturday";
 
 let isWeekend;
 
-if ((day === "Saturday") || (day === "Sunday")) {
+if (day === "Saturday" || day === "Sunday") {
     isWeekend = true
 } else {
     isWeekend = false

@@ -16,3 +16,14 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+const lowerCaseString = (str) => {
+    if (typeof str === 'string') {
+        return str.toLowerCase();
+    } else {
+        undefined
+    };
+    
+};
+
+console.log(lowerCaseString("HeLLO WORLD"));

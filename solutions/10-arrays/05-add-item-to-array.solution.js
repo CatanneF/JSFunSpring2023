@@ -6,10 +6,6 @@ let languages = ["C++"]; // Do not change this line
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-
-languages.push("Java", "Python", "Javascript");
-
-
-console.log(languages);
-
-
+languages.push("HTML");
+languages.push("CSS");
+languages.push("JavaScript");

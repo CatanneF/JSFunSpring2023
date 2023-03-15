@@ -10,3 +10,7 @@ const cars = ["BMW", "Honda", "Civic"]; // Do not change this line
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+let [myCar] = cars;
+
+console.log(myCar);

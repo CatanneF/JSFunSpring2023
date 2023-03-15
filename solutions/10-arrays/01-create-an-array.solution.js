@@ -5,4 +5,8 @@
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-let restaurants = ["McDonalds", 3.6, "Within 15 miles"];
+let restaurants = [
+  "Lost & Found Bar & Kitchen",
+  "Dinosaur Bar-B-Que",
+  "Karavalli",
+];
