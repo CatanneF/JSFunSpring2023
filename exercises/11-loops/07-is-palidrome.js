@@ -12,7 +12,7 @@ let string = "racecar";
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-let isPalindrome
+let isPalindrome;
 
 const reverseString = (str) => {
     var splitString = str.split("")

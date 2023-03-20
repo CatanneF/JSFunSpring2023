@@ -10,16 +10,16 @@
 // WRITE YOUR ANSWER BELOW THIS LINE
 
 let counter = 1;
-let countArray = [];
 
 
 while (counter <= 10) {
    let count = counter * 10
    counter++;
    console.log(count);
+  
 };
 
-console.log(countArray)
+
 
 
 

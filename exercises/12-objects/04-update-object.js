@@ -15,3 +15,9 @@ let student = {
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+student.name = "Catherine";
+student.skills = [...student.skills , "Being a permanent student"];
+
+console.log(student);
+
