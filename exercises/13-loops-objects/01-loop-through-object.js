@@ -19,9 +19,11 @@ const links = {
 // WRITE YOUR ANSWER BELOW THIS LINE
 
 
-
-for (let htmlLinks in links) {
-  const html = "<a href=\"" + links[htmlLinks] + "\">" + htmlLinks + "</a>";
-  console.log(html);
+let html = ""; 
+for (let htmlKey in links) {
+  html += "<a href=\"" + links[htmlKey] + "\">" + htmlKey + "</a>";
+  
 } 
+
+console.log(html);
 
