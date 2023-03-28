@@ -38,13 +38,24 @@ const isNumberTwoDigits = (num) => {
 
 const findFirst = (arrayOfNum, callback) => {
   // WRITE YOUR ANSWER IN HERE
-};
+  for (let i = 0; i < arrayOfNum.length; i++) {
+    let resultNum = callback(arrayOfNum[i]);
+    console.log(resultNum);
+    if (resultNum = true) {
+      return arrayOfNum[i];
+      break;
+    } else {
+      continue;
+    }
+    }
+  };
 
-/**
- * Uncomment me to test your answer in Quokka
- * console.log( findFirst([1, 3, 7, 8, 20], isNumberEven) )
- * console.log( findFirst([4, 500, 30, 2], isNumberTwoDigits) )
- */
+
+ //* Uncomment me to test your answer in Quokka
+ findFirst([1, 3, 7, 8, 20], isNumberEven)
+  console.log( findFirst([1, 3, 7, 8, 20], isNumberEven) )
+  console.log( findFirst([4, 500, 30, 2], isNumberTwoDigits) )
+
 
 // DO NOT DELETE BELOW. It is for the tests.
 
