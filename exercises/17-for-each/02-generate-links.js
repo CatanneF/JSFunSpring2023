@@ -24,3 +24,9 @@ const links = [
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+links.forEach((webLink, indx) => {
+  htmlStr += (`<a href="${webLink}"> ${indx + 1}. ${webLink}</a>`);
+  
+});
+console.log(htmlStr);
