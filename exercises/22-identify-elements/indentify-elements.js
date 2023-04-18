@@ -13,4 +13,24 @@
    * You can also make the "x" icon dismiss the notification.
    */
   // Write your answer here
+
+const selectButton = document.querySelectorAll('.button');
+
+selectButton.forEach((button) => {
+  const selectPlan = () => {
+    const notificationMessage = document.querySelector("#notificationMessage");
+    notification.textContent = `Thank you for purchasing the #{button.id} plan.`;
+    
+    const notification = document.querySelector('#notification');    
+    notification.style.display = "block";  
+  };
+
+
+selectButton.addEventListener("click", selectPlan);
+});
+
+
+
+
 })();
+

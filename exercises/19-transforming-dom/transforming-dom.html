@@ -22,7 +22,7 @@
         <p>
           Edit the <code class="text-dark">&lt;img&gt;</code> tag below so that
           it displays an image. (You can use the image
-          <a
+          <a 
             href="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif"
             target="_blank"
             >https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif</a
@@ -35,10 +35,9 @@
       <div class="alert alert-warning">
         Change the link below so that when clicked on, it links to
         <em>https://developer.mozilla.org/en-US/docs/Web/JavaScript</em>.
-        <div>
-          <a href="https://www.w3schools.com/js/default.asp" target="_blank"
-            >Read the (unofficial) JavaScript manual</a
-          >
+        <div >
+          <a id="mdn-link" href="https://www.w3schools.com/js/default.asp" target="_blank"
+            >Read the (unofficial) JavaScript manual</a>
         </div>
       </div>
 
@@ -52,7 +51,7 @@
         color using inline styles.
       </div>
 
-      <div class="alert alert-danger">
+      <div class="alert alert-warning new">
         Change the text color of this <em>&lt;div&gt;</em> to another color by
         changing the class.
         <a
@@ -62,7 +61,7 @@
         >
       </div>
 
-      <div class="alert alert-warning">
+      <div class="alert alert-w hide">
         Hide this <em>&lt;div&gt;</em> using inline styles.
       </div>
 
@@ -70,7 +69,7 @@
         Show the hidden <code>&lt;div&gt;</code> below by modifying the
         <em>class</em> in some way.
       </p>
-      <div class="alert alert-success hidden">Peek a boo!</div>
+      <div class="alert alert-success show">Peek a boo!</div>
 
       <div class="alert alert-info mt-5">
         Using conditional logic (e.g. an if statement), change the
@@ -79,7 +78,7 @@
           this button
         </button>
         has class <em>btn-primary</em>.
-        <div class="text-dark">
+        <div class="text-dark" id="blue">
           <!-- if button has class "btn-primary", put text here -->
         </div>
       </div>

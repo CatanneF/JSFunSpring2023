@@ -20,3 +20,5 @@ numbers.forEach((num) => {
 console.log(lowestNumber);
 
 
+
+

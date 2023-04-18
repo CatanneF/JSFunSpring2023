@@ -9,6 +9,11 @@
    * @see https://developer.mozilla.org/en-US/docs/Web/API/Window/alert
    */
   // Write your answer here
+  const alert = document.querySelector(".btn-success");
+  const alertMe = () => {
+    window.alert("Alert Me!")
+  } 
+  alert.addEventListener("click", alertMe);
   /**
    * Problem 2: Disable a button that will charge a credit card.
    *
@@ -17,4 +22,11 @@
    * 2. Change the text to say e.g. "Loading ..." once it is clicked.
    */
   // Write your answer here
+  let disable = document.querySelector(".btn-warning");
+  const disableButton = () => {
+    disable.disabled = 'disabled';
+    disable.textContent = "Loading..."
+
+  };
+  disable.addEventListener("click", disableButton);
 })();

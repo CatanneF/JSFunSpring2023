@@ -12,4 +12,24 @@
  */
 (function () {
   // Put your answers in here
+  const firstListItem = document.querySelector("li");
+  const secondListItem = document.querySelector("#myId");
+  const warning = document.querySelector(".bg-warning");
+  warning.forEach((warning) => {
+    console.log("warning item")
+  });
+  const targetButton = document.querySelector("#target-button");
+  const links = document.querySelectorAll(".social-link");
+  links.forEach((links) => {
+    console.log("socials link")
+  });
+  const cells = document.querySelectorAll('#myRow .col');
+  cells.forEach((cells) => {
+    console.log("cell");
+  });
+
+
+
+  
 })();
+
