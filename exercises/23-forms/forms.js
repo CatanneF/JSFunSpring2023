@@ -10,7 +10,20 @@
    * it should display what the user is typing in the <div></div> tags below.
    */
   // Write your answer here
+  const userText = document.querySelector('#userTextBox');
+  const textResult = document.querySelector('#textBox');
+
+  userText.addEventListener("change", event => {
+    textResult.textContent = event.target.value;
+  });
+
   /**
+   * 
+   * 
+   * 
+   * 
+   * 
+   * 
    * Problem 2: Display the results of the world's most pointless search engine.
    *
    * When the user types in the textbook and either clicks "Search" button or hits the enter key,
@@ -23,6 +36,17 @@
    * and you must prevent the page from refreshing when the form is submitted.
    */
   // Write your answer here
+
+  const locationSearched = document.querySelector('#searchForm');
+  const searchResults = document.querySelector('#searchResults');
+  const userInput = document.querySelector('#userInput')
+
+
+  locationSearched.addEventListener("submit", event => {
+    event.preventDefault();
+    searchResults.innerHTML = `No results ${userInput.value} for found`;
+    
+  });
   /**
    * Problem 3: Agree to the terms and conditions
    *
@@ -34,4 +58,12 @@
    * To start, you will need to hide some element on the page and change the input's classes.
    */
   // Write your answer here
+
+  
+  
+  
+    
+
+
+   
 })();

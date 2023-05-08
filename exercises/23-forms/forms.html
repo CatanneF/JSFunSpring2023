@@ -27,6 +27,10 @@
       body {
         height: 100vh;
       }
+
+      .hidden {
+        display: none;
+      }
     </style>
 
     <script src="forms.js" defer></script>
@@ -34,39 +38,40 @@
 
   <body class="d-flex flex-column">
     <section class="bg-warning pt-4 pb-2 flex-fill">
-      <div class="container">
+      <div  class="container">
         <!-- Capture what the user is type here -->
         <input
           type="text"
+          id="userTextBox"
           class="form-control mb-3"
           placeholder="Enter mystery text here"
           aria-label="Enter mystery text here"
         />
-
         <!-- Display whatever text the user types in the textbox above inside the <div></div> -->
-        <div class="card bg-warning"></div>
+        <div id="textBox" class="card bg-warning"></div>
       </div>
     </section>
 
     <section class="bg-dark pt-4 pb-2 flex-fill">
       <div class="container">
         <!-- Handle this form -->
-        <form class="form-group">
+        <form id="searchForm" class="form-group">
           <div class="input-group">
             <input
+              id="userInput"
               type="search"
               placeholder="Search for oceans near Albany, NY"
               aria-label="Search for oceans near Albany, NY"
               class="form-control"
             />
             <div class="input-group-append">
-              <button class="btn btn-success" type="submit">Search</button>
+              <button id="searchBtn" class="btn btn-success" type="submit">Search</button>
             </div>
           </div>
         </form>
 
         <!-- Display "No results for ___ found" inside of this <p></p> -->
-        <p class="text-white"></p>
+        <p id="searchResults" class="text-white"></p>
       </div>
     </section>
 
@@ -86,12 +91,12 @@
           </div>
 
           <!-- Only display me if the user did not agree to the terms and conditions -->
-          <div class="text-danger">
+          <div class="text-danger hidden">
             <small>You must agree to the terms and conditions</small>
           </div>
 
           <!-- Only display after the user clicks on the "Continue" button and he has agreed to the terms -->
-          <div class="text-success">
+          <div class="text-success hidden">
             <small>Thank you for signing up!</small>
           </div>
         </form>

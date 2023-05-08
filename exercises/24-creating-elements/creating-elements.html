@@ -32,7 +32,27 @@
       @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style for <style> tags
     -->
   </head>
+
+  <style>
+    h1 {
+      color: blue;
+      padding: 3rem;
+    }
+
+  </style>
+
   <body>
     <!-- Put your HTML here -->
   </body>
+
+  <script>
+
+    const header = document.createElement("h1");;
+    header.textContent = "Welcome to my website";
+    document.querySelector("body").appendChild(header);
+
+    
+
+
+  </script>
 </html>
