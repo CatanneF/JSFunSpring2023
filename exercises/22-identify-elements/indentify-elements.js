@@ -14,19 +14,16 @@
    */
   // Write your answer here
 
-const selectButton = document.querySelectorAll('.button');
+const selectPlanButton = document.querySelectorAll('.button');
 
-selectButton.forEach((button) => {
-  const selectPlan = () => {
-    const notificationMessage = document.querySelector("#notificationMessage");
-    notification.textContent = `Thank you for purchasing the #{button.id} plan.`;
-    
-    const notification = document.querySelector('#notification');    
-    notification.style.display = "block";  
-  };
+const notificationMessage = document.querySelector("#notificationMessage");
+const notification = document.querySelector('#notification'); 
 
-
-selectButton.addEventListener("click", selectPlan);
+selectPlanButton.forEach((plan) => {
+  plan.addEventListener("click", () => {
+    notificationMessage.textContent = `Thank you for purchasing the ${plan.id} plan!`;
+    notification.style.display = "block";
+  });
 });
 
 

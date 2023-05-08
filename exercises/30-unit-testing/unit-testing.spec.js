@@ -42,6 +42,13 @@ describe("Unit Testing", () => {
    * Write a unit test for `subtract` here.
    */
 
+  describe("subtract", () => {
+    it("should give the difference between two numbers", () => {
+      const difference = subtract(8, 5);
+      expect(difference).to.equal(3);
+    });
+  })
+
   /**
    * Write two tests for `isEvenNumber` here:
    * - The first should test if `isEvenNumber` returns true for even numbers
@@ -50,9 +57,18 @@ describe("Unit Testing", () => {
    * @see https://www.chaijs.com/api/bdd/
    */
 
+  describe("isEvenNumber", () => {
+    it("should tell whether a number is even or odd", () => {
+      const isEven = isEvenNumber(4);
+      expect(isEven).to.be.true;
+      const isNotEven = isEvenNumber(5);
+      expect(isNotEven).to.be.false;
+    })
+  })
+
   describe("findAdults", () => {
     // Remove the `.skip` when you are ready to write this test
-    it.skip("will find, in a multidimensional array, all the people older than 18", () => {
+    it("will find, in a multidimensional array, all the people older than 18", () => {
       /**
        * Complete the unit test for `findAdults` here.
        * Hint: Arrays are passed by reference, so you will need to call on a test that deeply compares values.
@@ -63,10 +79,11 @@ describe("Unit Testing", () => {
         { name: "Aiden", age: 10 },
         { name: "Chloe", age: 16 },
       ];
+      expect(people).to.deep.include({name: "Janet", age: 43});
     });
 
     // Remove the `.skip` when you are ready to write this test
-    it.skip("will return an empty array if no adults are found", () => {
+    it("will return an empty array if no adults are found", () => {
       /**
        * Complete the unit test for `findAdults` here, where you use a different assertion than `.equal()`
        * @see https://www.chaijs.com/api/bdd/
@@ -76,6 +93,8 @@ describe("Unit Testing", () => {
         { name: "Emma", age: 17 },
         { name: "Ethan", age: 8 },
       ];
+      expect(people).to.be.an('array').that.is.empty;
     });
   });
+
 });
