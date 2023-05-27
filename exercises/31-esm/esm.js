@@ -25,6 +25,9 @@ const greet = (name) => {
  */
 // Put your answer here
 
+import greet from "./greet.js";
+greet("Catherine");
+
 /**
  * Problem 2: Named Exports
  * You are going to follow the same steps,
@@ -42,6 +45,9 @@ const multiply = (a, b) => {
  * If you see "Error [ERR_MODULE_NOT_FOUND]:", then your export or import is not correct.
  */
 // Put your answer here
+
+import { multiply } from "./multiply.js";
+multiply(2.3);
 
 /**
  * Ignore me below. This is for the tests.
